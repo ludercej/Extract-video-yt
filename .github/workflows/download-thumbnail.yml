@@ -1,7 +1,11 @@
 name: Exécuter un script Bash
 
-on:
-  workflow_dispatch:  # Permet de lancer ce workflow manuellement
+on: 
+    workflow_dispatch:
+        inputs:
+            youtube_url:
+                description: 'URL de la vidéo YouTube'
+                required: true
 
 jobs:
   run-script:
