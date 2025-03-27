@@ -16,6 +16,9 @@ if [ -z "$VIDEO_ID" ]; then
   exit 1
 fi
 
+# Créer le répertoire 'uploads' si ce n'est pas déjà fait
+mkdir -p uploads
+
 # Télécharger la miniature en haute définition
 THUMBNAIL_URL="https://img.youtube.com/vi/$VIDEO_ID/maxresdefault.jpg"
 
