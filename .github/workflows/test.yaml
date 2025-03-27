@@ -19,3 +19,10 @@ jobs:
       # Étape 3 : Exécuter le script Bash
       - name: Exécuter le script.sh
         run: ./get_thumbnail.sh "https://www.youtube.com/watch?v=MCL8DpoM9fs&t=18s"
+
+      # Etape 4 : Download l'artefact et le stock dans un fichier
+       - name: Download the video
+         uses: actions/upload-artifact@v4.6.2
+         with:
+            name: Download the video
+            path: https://github.com/ludercej/Extract-video-yt/tree/main/uploads
