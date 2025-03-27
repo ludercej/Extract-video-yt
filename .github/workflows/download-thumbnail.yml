@@ -22,7 +22,7 @@ jobs:
 
       # Étape 4 : Télécharger l'artefact généré
       - name: Télécharger l'artefact généré
-        uses: actions/download-artifact@v4.6.2  # Utilisation de la version stable v4
+        uses: actions/upload-artifact@v4.6.2  # Utilisation de la version stable v4
         with:
           name: thumbnail-artifact
           path: uploads
