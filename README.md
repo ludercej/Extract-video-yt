@@ -2,8 +2,11 @@
 
 
 ✅ Étape 1 – Écriture du script Bash
+
 Objectif : Créer un script Bash get_thumbnail.sh capable de télécharger la miniature (thumbnail) d'une vidéo YouTube à partir de son URL.
+
 Contraintes :
+
 • Le script devra être exécutable ( chmod +x get_thumbnail.sh )
 
 • Le script devra :
