@@ -21,8 +21,8 @@ jobs:
         run: ./get_thumbnail.sh https://www.youtube.com/watch?v=MCL8DpoM9fs&t=18s
 
       # Étape 4 : Download de l'artefact 
-      - name: Télécharger l'artefact généré
+      - name: Upload l'artefact généré
         uses: actions/upload-artifact@v4.6.1
         with:
           name: upload video yt
-          path: thumbnails*.jpg
+          path: uploads/thumbnails_*.jpg
