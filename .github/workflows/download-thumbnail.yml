@@ -6,7 +6,6 @@ on:
 jobs:
   run-script:
     runs-on: ubuntu-latest  # Environnement sur lequel le job sera exécuté
-
     steps:
       # Étape 1 : Vérifier le code du dépôt
       - name: Vérifier le code du dépôt
