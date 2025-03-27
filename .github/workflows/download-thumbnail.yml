@@ -17,8 +17,8 @@ jobs:
 
       # Étape 3 : Exécuter le script avec l'URL de la vidéo
       - name: Exécuter le script get_thumbnail.sh
-        run: ./get_thumbnail.sh ${{ inputs.youtube_url }}
-
+        run: ./get_thumbnail.sh https://www.youtube.com/watch?v=eSuQ1TxNWIY
+        
       # Étape 4 : Download de l'artefact 
       - name: Upload l'artefact généré
         uses: actions/upload-artifact@v4.6.1
