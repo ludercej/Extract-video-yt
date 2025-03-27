@@ -3,6 +3,9 @@
 name: Manual trigger
 
 on:
+   push:
+        branches: "main"
+        paths: "uploads/**"
   workflow_dispatch:
 
 jobs:
