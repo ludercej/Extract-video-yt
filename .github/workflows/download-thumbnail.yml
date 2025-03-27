@@ -1,4 +1,4 @@
-name: "Check VideoID Youtube video and stock miniature on folders "uploads" in github
+#name: "Check VideoID Youtube video and stock miniature on folders "uploads" in github
 
 name: Manual trigger
 on:
