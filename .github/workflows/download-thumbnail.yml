@@ -1,31 +1,37 @@
-name: Exécuter un script Bash
+name: Download thumbnail
 
-on: 
+on:
     workflow_dispatch:
         inputs:
             youtube_url:
-                description: 'URL de la vidéo YouTube'
+                description: 'URL de la vidéo'
                 required: true
 
 jobs:
-  run-script:
-    runs-on: ubuntu-latest  # Environnement sur lequel le job sera exécuté
-    steps:
-      # Étape 1 : Vérifier le code du dépôt
-      - name: Vérifier le code du dépôt
-        uses: actions/checkout@v4.2.2  # Utilisation de la version stable v4
+    get_thumbnail:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Checkout repo
+          uses: actions/checkout@v4
 
-      # Étape 2 : Donner les permissions d'exécution au script
-      - name: Donner les permissions d'exécution au script
-        run: chmod +x get_thumbnail.sh
+        - name: Give permissions to the script
+          run: chmod +x get_thumbnail.sh
 
-      # Étape 3 : Exécuter le script avec l'URL de la vidéo
-      - name: Exécuter le script get_thumbnail.sh
-        run: ./get_thumbnail.sh https://www.youtube.com/watch?v=eSuQ1TxNWIY
+        - name: Execute script
+          run: ./get_thumbnail.sh ${{ inputs.youtube_url }}
 
-      # Étape 4 : Download de l'artefact 
-      - name: Upload l'artefact généré
-        uses: actions/upload-artifact@v4
-        with:
-          name: upload video yt
-          path: uploads
+        # Étape pour lister les fichiers dans le répertoire 'uploads'
+        - name: List files in uploads directory
+          run: |
+            echo "Listing files in uploads directory:"
+            ls -l uploads
+
+        - name: Push artifact
+          uses: actions/upload-artifact@v4
+          with:
+            name: youtube-thumbnail
+            path: uploads/*.jpg  # Assurez-vous que le fichier généré se trouve dans uploads et est un .jpg
+            if-no-files-found: warn
+            compression-level: 6
+            overwrite: false
+            include-hidden-files: false
