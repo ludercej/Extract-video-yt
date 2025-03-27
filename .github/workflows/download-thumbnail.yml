@@ -1,16 +1,45 @@
 #name: "Check VideoID Youtube video and stock miniature on folders "uploads" in github
 
-name: Manual trigger
+name: Manual trigger & Générer Miniature de Vidéo
 
 on:
   workflow_dispatch:
-   push:
-        branches: "main"
-        paths: "uploads/**"
+   inputs:
+     youtube_url:
+     description: 'URL de la vidéo YouTube'
+      required: true
 
+# Etape 1 : Check le code + maj os
 jobs:
-  hello-job:
+  job1:
+     check:
+          runs-on: ubuntu-latest
+          steps:
+              - name: "Checkout code"
+                uses: actions/checkout@v4
+
+              - name: "maj de l'Os ubuntu latest"
+                uses: sudo apt-get update && sudo apt-get upgrade
+
+ # Etape 2 : Télécharge et execute le script               
+  job2:
     runs-on: ubuntu-latest
+    defaults:
+          run:
+        shell: bash
+        working-directory: ./scripts
     steps:
-      - name: Hello Step
-        run: echo "Hello ! j'utilise le Trigger Githuel manually"
+      - name: Check out the repository to the runner
+        uses: actions/checkout@v4  
+      - name: Make the script files executable
+        run: chmod +x get_thumbnail.sh
+      - name: Run the scripts
+        run: |
+          ./get_thumbnail.sh
+
+ # Étape 3: Télécharger la miniature comme artefact
+      - name: Télécharger la miniature comme artefact
+        uses: actions/upload-artifact@v4.6.2
+        with:
+          name: thumbnail
+          path: uploads/thumbnail.jpg
