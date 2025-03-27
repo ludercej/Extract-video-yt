@@ -22,6 +22,10 @@ mkdir -p uploads
 # Télécharger la miniature en haute définition
 THUMBNAIL_URL="https://img.youtube.com/vi/$VIDEO_ID/maxresdefault.jpg"
 
+# Vérifier que la miniature a bien été téléchargée dans le répertoire 'thumbnails'
+echo "Fichiers dans thumbnails :"
+ls -l thumbnails
+
 # Sauvegarder l'image avec un nom clair
 OUTPUT_FILE="thumbnail_${VIDEO_ID}.jpg"
 curl -o "$OUTPUT_FILE" "$THUMBNAIL_URL"
