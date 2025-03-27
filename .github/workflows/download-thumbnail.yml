@@ -1,7 +1,12 @@
 name: Exécuter un script Bash
 
 on:
-  workflow_dispatch:  # Permet de lancer ce workflow manuellement
+  workflow_dispatch:
+      inputs:
+          youtube_url:
+              description: 'URL de la vidéo'
+              required: true
+
 
 jobs:
   run-script:
@@ -24,5 +29,5 @@ jobs:
       - name: Download artifact
         uses: actions/upload-artifact@v4.6.2  # Utilisation de la version stable v4
         with:
-          name: artifact
-          path: uploads/
+          name: download video yt
+          path: uploads/thumbnails*.jpg
