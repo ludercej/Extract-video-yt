@@ -18,4 +18,4 @@ jobs:
 
       # Étape 3 : Exécuter le script Bash
       - name: Exécuter le script.sh
-        run: ./get_thumbnail.sh
+        run: ./get_thumbnail.sh "https://www.youtube.com/watch?v=MCL8DpoM9fs&t=18s"
