@@ -6,8 +6,21 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
-# Créer le répertoire 'uploads' si ce n'est pas déjà fait
-mkdir -p uploads
+# Créer le répertoire 'thumbnails' s'il n'existe pas
+echo "Création du répertoire thumbnails..."
+mkdir -p thumbnails
+
+# Vérifier si le répertoire a bien été créé
+if [ -d "thumbnails" ]; then
+  echo "Le répertoire thumbnails a été créé avec succès."
+else
+  echo "Erreur : Le répertoire thumbnails n'a pas pu être créé."
+  exit 1
+fi
+
+# Vérifier que la miniature a bien été téléchargée dans le répertoire 'thumbnails'
+echo "Fichiers dans thumbnails :"
+ls -l thumbnails
 
 # Extraire l'ID de la vidéo à partir de l'URL
 URL=$1
@@ -21,10 +34,6 @@ fi
 
 # Télécharger la miniature en haute définition
 THUMBNAIL_URL="https://img.youtube.com/vi/$VIDEO_ID/maxresdefault.jpg"
-
-# Vérifier que la miniature a bien été téléchargée dans le répertoire 'thumbnails'
-echo "Fichiers dans thumbnails :"
-ls -l thumbnails
 
 # Sauvegarder l'image avec un nom clair
 OUTPUT_FILE="thumbnail_${VIDEO_ID}.jpg"
