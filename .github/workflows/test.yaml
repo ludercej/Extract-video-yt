@@ -8,21 +8,21 @@ jobs:
     runs-on: ubuntu-latest  # Environnement sur lequel le job sera exécuté
 
     steps:
-      # Étape 1 : Vérifier le code du dépôt
-      - name: Vérifier le code du dépôt
-        uses: actions/checkout@v4
+        # Étape 1 : Vérifier le code du dépôt
+        - name: Vérifier le code du dépôt
+          uses: actions/checkout@v4
 
-      # Étape 2 : Donner les permissions d'exécution au script
-      - name: Donner les permissions d'exécution au script
-        run: chmod +x ./get_thumbnail.sh
+        # Étape 2 : Donner les permissions d'exécution au script
+         - name: Donner les permissions d'exécution au script
+           run: chmod +x ./get_thumbnail.sh
 
-      # Étape 3 : Exécuter le script Bash
-      - name: Exécuter le script.sh
-        run: ./get_thumbnail.sh "https://www.youtube.com/watch?v=MCL8DpoM9fs&t=18s"
+        # Étape 3 : Exécuter le script Bash
+         - name: Exécuter le script.sh
+           run: ./get_thumbnail.sh "https://www.youtube.com/watch?v=MCL8DpoM9fs&t=18s"
 
-      # Etape 4 : Download l'artefact et le stock dans un fichier
-       - name: Download the video
-         uses: actions/upload-artifact@v4.6.2
-         with:
-            name: Download the video
-            path: https://github.com/ludercej/Extract-video-yt/tree/main/uploads
+        # Etape 4 : Download l'artefact et le stock dans un fichier
+          - name: Download the video
+            uses: actions/upload-artifact@v4.6.2
+            with:
+              name: Download the video
+              path: https://github.com/ludercej/Extract-video-yt/tree/main/uploads
