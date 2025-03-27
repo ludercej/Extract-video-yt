@@ -18,7 +18,7 @@ jobs:
 
       # Étape 3 : Exécuter le script avec l'URL de la vidéo
       - name: Exécuter le script get_thumbnail.sh
-        run: ./get_thumbnail.sh https://www.youtube.com/watch?v=MCL8DpoM9fs&t=18s
+        run: ./get_thumbnail.sh https://www.youtube.com/watch?v=MCL8DpoM9fs&t=18s thumbnail/*.jpg
 
       # Étape 4 : Vérifier que le fichier thumbnail.jpg est généré
       - name: Lister les fichiers du répertoire
@@ -29,4 +29,4 @@ jobs:
         uses: actions/upload-artifact@v4.6.2
         with:
           name: download video yt
-          path: thumbnails/*.jpg
+          path: thumbnails
