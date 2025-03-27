@@ -14,7 +14,7 @@ jobs:
 
       # Étape 2 : Donner les permissions d'exécution au script
       - name: Donner les permissions d'exécution au script
-        run: chmod +x ./get_thumbnail.sh
+        run: chmod +x get_thumbnail.sh
 
       # Étape 3 : Exécuter le script avec l'URL de la vidéo
       - name: Exécuter le script get_thumbnail.sh
