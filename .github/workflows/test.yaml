@@ -1,0 +1,21 @@
+name: Exécuter un script Bash
+
+on:
+  workflow_dispatch:  # Permet de lancer ce workflow manuellement
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest  # Environnement sur lequel le job sera exécuté
+
+    steps:
+      # Étape 1 : Vérifier le code du dépôt
+      - name: Vérifier le code du dépôt
+        uses: actions/checkout@v4
+
+      # Étape 2 : Donner les permissions d'exécution au script
+      - name: Donner les permissions d'exécution au script
+        run: chmod +x ./get_thumbnail.sh
+
+      # Étape 3 : Exécuter le script Bash
+      - name: Exécuter le script.sh
+        run: ./get_thumbnail.sh
