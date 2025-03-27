@@ -1,4 +1,4 @@
-name: Execute bash script
+name: download thumbnail
 
 on:
     workflow_dispatch:
@@ -7,31 +7,22 @@ on:
                 description: 'URL de la vidéo'
                 required: true
 
+
 jobs:
-    get_thumbnail:
+    get_thumnail:
         runs-on: ubuntu-latest
         steps:
-        - name: Checkout repo
+        - name: checkout repo
           uses: actions/checkout@v4
 
-        - name: Give permissions to the script
+        - name: give permissions to the script
           run: chmod +x get_thumbnail.sh
 
         - name: Execute script
           run: ./get_thumbnail.sh ${{ inputs.youtube_url }}
 
-        # Étape pour lister les fichiers dans le répertoire 'uploads'
-        - name: List files in uploads directory
-          run: |
-            echo "Listing files in uploads directory:"
-            ls -l uploads
-
-        - name: Push artifact
+        - name: push artefact
           uses: actions/upload-artifact@v4
           with:
-            name: youtube-thumbnail
-            path: uploads/*.jpg  # Assurez-vous que le fichier généré se trouve dans uploads et est un .jpg
-            if-no-files-found: warn
-            compression-level: 6
-            overwrite: false
-            include-hidden-files: false
+           name: youtube thumbnail
+           path: thumbnails/*.jpg
