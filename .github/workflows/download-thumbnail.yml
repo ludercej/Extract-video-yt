@@ -1,28 +1,28 @@
-name: Exécuter un script Bash
+name: download thumbnail
 
 on:
-  workflow_dispatch:  # Permet de lancer ce workflow manuellement
+    workflow_dispatch:
+        inputs:
+            youtube_url:
+                description: 'URL de la vidéo'
+                required: true
+
 
 jobs:
-  run-script:
-    runs-on: ubuntu-latest  # Environnement sur lequel le job sera exécuté
+    get_thumnail:
+        runs-on: ubuntu-latest
+        steps:
+        - name: checkout repo
+          uses: actions/checkout@v4
 
-    steps:
-      # Étape 1 : Vérifier le code du dépôt
-      - name: Vérifier le code du dépôt
-        uses: actions/checkout@v4.2.2  # Utilisation de la version stable v4
+        - name: give permissions to the script
+          run: chmod +x get_thumbnail.sh
 
-      # Étape 2 : Donner les permissions d'exécution au script
-      - name: Donner les permissions d'exécution au script
-        run: chmod +x ./get_thumbnail.sh
+        - name: Execute script
+          run: ./get_thumbnail.sh ${{ inputs.youtube_url }}
 
-      # Étape 3 : Exécuter le script avec l'URL de la vidéo
-      - name: Exécuter le script get_thumbnail.sh
-        run: ./get_thumbnail.sh https://www.youtube.com/watch?v=MCL8DpoM9fs&t=18s
-
-      # Étape 4 : Télécharger l'artefact généré
-      - name: Download artifact
-        uses: actions/upload-artifact@v4.6.2  # Utilisation de la version stable v4
-        with:
-          name: download video yt
-          path: thumbnails*.jpg
+        - name: push artefact
+          uses: actions/upload-artifact@v4
+          with:
+           name: youtube thumbnail
+           path: thumbnails/*.jpg
