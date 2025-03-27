@@ -21,6 +21,11 @@ jobs:
         - name: Execute script
           run: ./get_thumbnail.sh ${{ inputs.youtube_url }}
 
+        - name: List files in thumbnails directory
+          run: |
+            echo "Listing files in thumbnails directory:"
+            ls -l thumbnails
+
         - name: push artefact
           uses: actions/upload-artifact@v4.6.2
           with:
