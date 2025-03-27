@@ -8,14 +8,27 @@ jobs:
     runs-on: ubuntu-latest  # Environnement sur lequel le job sera exécuté
 
     steps:
-        - name: Vérifier le code du dépôt
-          uses: actions/checkout@v4
-        - name: Donner les permissions d'exécution au script
-          run: chmod +x ./get_thumbnail.sh
-        - name: Exécuter le script.sh
-          run: ./get_thumbnail.sh "https://www.youtube.com/watch?v=MCL8DpoM9fs&t=18s"
-        - name: Download the video
-          uses: actions/upload-artifact@v4.6.2
-          with:
-              name: Download the video
-              path: https://github.com/ludercej/Extract-video-yt/tree/main/uploads
+      # Étape 1 : Vérifier le code du dépôt
+      - name: Vérifier le code du dépôt
+        uses: actions/checkout@v2  # Utilisation de la version stable v2
+
+      # Étape 2 : Donner les permissions d'exécution au script
+      - name: Donner les permissions d'exécution au script
+        run: chmod +x ./get_thumbnail.sh
+
+      # Étape 3 : Exécuter le script avec l'URL de la vidéo
+      - name: Exécuter le script get_thumbnail.sh
+        run: ./get_thumbnail.sh "https://www.youtube.com/watch?v=MCL8DpoM9fs&t=18s"
+
+      # Étape 4 : Télécharger un fichier à partir du dépôt (par exemple une miniature)
+      - name: Télécharger la miniature (ou autre fichier)
+        run: |
+          # Utilisation de wget pour télécharger un fichier depuis une URL spécifique du dépôt
+          wget -O uploads/thumbnail.jpg https://github.com/ludercej/Extract-video-yt/raw/main/uploads/thumbnail.jpg
+
+      # Étape 5 : Télécharger l'artefact généré
+      - name: Télécharger l'artefact généré
+        uses: actions/upload-artifact@v2  # Utilisation de la version stable v2
+        with:
+          name: thumbnail-artifact
+          path: uploads/thumbnail.jpg
