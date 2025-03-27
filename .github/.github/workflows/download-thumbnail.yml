@@ -1,18 +1,12 @@
 name: "Check VideoID Youtube video and stock miniature on folders "uploads" in github
 
 name: Manual trigger
-
 on:
-  workflow_dispatch:
-    inputs:
-      name:
-        description: "Who to greet"
-        default: "World"
+  workflow_dispatch
 
 jobs:
-    hello:
+  do-something:
         runs-on: ubuntu-latest
-
         steps:
         - name: Hello Step
-            run: echo "Hello ${{ github.event.inputs.name }}"
+            run: echo "Hello ! j'utilise le Trigger Githuel manually"
