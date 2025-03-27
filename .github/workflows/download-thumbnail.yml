@@ -1,4 +1,4 @@
-name: Download thumbnail
+name: Execute bash script
 
 on:
     workflow_dispatch:
