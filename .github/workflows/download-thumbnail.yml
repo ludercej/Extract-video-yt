@@ -25,4 +25,4 @@ jobs:
         uses: actions/upload-artifact@v4.6.2  # Utilisation de la version stable v4
         with:
           name: download video yt
-          path: thumbnails*.jpg
+          path: thumbnails.jpg
