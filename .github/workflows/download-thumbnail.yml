@@ -26,7 +26,7 @@ jobs:
 
       # Étape 5 : Télécharger l'artefact généré (vérifie que thumbnails.jpg existe)
       - name: Télécharger l'artefact généré
-        uses: actions/upload-artifact@v4.6
+        uses: actions/upload-artifact@v4.6.2
         with:
           name: download video yt
           path: thumbnails.jpg
