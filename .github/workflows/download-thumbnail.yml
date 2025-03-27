@@ -4,6 +4,10 @@ name: Manual trigger & Générer Miniature de Vidéo
 
 on:
   workflow_dispatch:
+   inputs:
+     youtube_url:
+     description: 'URL de la vidéo YouTube'
+      required: true
 
 # Etape 1 : Check le code + maj os
 jobs:
