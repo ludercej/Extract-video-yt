@@ -1,5 +1,6 @@
 #!/bin/bash
 
+mkdir -p thumbnails
 # Vérifier si l'argument est fourni
 if [ -z "$1" ]; then
   echo "Usage: $0 <URL de la vidéo YouTube>"
