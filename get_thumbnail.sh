@@ -1,4 +1,7 @@
-# Vérifie que l'URL est passée
+#!/bin/bash
+
+get_thumbnail(){
+    # Vérifie que l'URL est passée
 if [ -z "$1" ]; then
   echo "Usage : $0 <URL YouTube>"
   exit 1
@@ -27,3 +30,6 @@ else
   echo "Erreur lors du téléchargement."
   exit 1
 fi
+}
+
+get_thumbnail "$1"
