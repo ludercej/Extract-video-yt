@@ -1,4 +1,4 @@
-    # Vérifie que l'URL est passée
+# Vérifie que l'URL est passée
 if [ -z "$1" ]; then
   echo "Usage : $0 <URL YouTube>"
   exit 1
