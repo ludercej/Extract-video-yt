@@ -1,3 +1,6 @@
+# Create folders
+mkdir -p thumbnails
+
 # Vérifie que l'URL est passée
 if [ -z "$1" ]; then
   echo "Usage : $0 <URL YouTube>"
@@ -14,8 +17,6 @@ if [ -z "$VIDEO_ID" ]; then
   echo "Erreur : impossible d'extraire l'ID de la vidéo."
   exit 1
 fi
-
-mkdir -p thumbnails
 
 # Télécharge la miniature
 curl -s -o "thumbnails/${VIDEO_ID}_thumbnail.jpg" "https://img.youtube.com/vi/$VIDEO_ID/maxresdefault.jpg"
