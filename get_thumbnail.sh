@@ -33,11 +33,8 @@ if [ -z "$VIDEO_ID" ]; then
 fi
 
 # Télécharger la miniature en haute définition
-THUMBNAIL_URL="https://img.youtube.com/vi/$VIDEO_ID/maxresdefault.jpg"
+curl -s -o "thumbnails/${VIDEO_ID}_thumbnail.jpg" "https://img.youtube.com/vi/$VIDEO_ID/maxresdefault.jpg"
 
-# Sauvegarder l'image avec un nom clair
-OUTPUT_FILE="thumbnail_${VIDEO_ID}.jpg"
-curl -o "$OUTPUT_FILE" "$THUMBNAIL_URL"
 
 # Vérifier si le téléchargement a réussi
 if [ $? -eq 0 ]; then
