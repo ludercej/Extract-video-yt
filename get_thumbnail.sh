@@ -8,7 +8,7 @@ fi
 
 # Extraire l'ID de la vidéo YouTube à partir de l'URL
 URL=$1
-VIDEO_ID=$(echo $URL | sed -E 's/.*(?:v=|\/)([a-zA-Z0-9_-]+).*/\1/')
+VIDEO_ID=$(echo $URL | sed -E 's/.*[?&]v=([^&]*).*/\1/')
 
 # Vérifier si l'ID de la vidéo a été extrait correctement
 if [ -z "$VIDEO_ID" ]; then
