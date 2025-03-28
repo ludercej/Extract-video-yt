@@ -6,6 +6,9 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
+# Create folder
+mkdir -p thumbnails
+
 # Extraire l'ID de la vidéo à partir de l'URL
 URL=$1
 VIDEO_ID=$(echo $URL | sed -E 's/.*(v=|\/)([a-zA-Z0-9_-]+).*/\2/')
