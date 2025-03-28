@@ -21,7 +21,7 @@ THUMBNAIL_URL="https://img.youtube.com/vi/$VIDEO_ID/maxresdefault.jpg"
 OUTPUT_FILE="thumbnail_$VIDEO_ID.jpg"
 
 echo "Téléchargement de la miniature de la vidéo YouTube avec l'ID $VIDEO_ID..."
-curl -o $OUTPUT_FILE $THUMBNAIL_URL thumbnails*.jpg
+curl -o $OUTPUT_FILE $THUMBNAIL_URL
 
 # Vérifier si le téléchargement a réussi
 if [ $? -eq 0 ]; then
