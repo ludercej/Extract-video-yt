@@ -1,14 +1,9 @@
-<<<<<<< HEAD
+#!/bin/bash
+
 # Create folders
 mkdir -p thumbnails
 
 # Vérifie que l'URL est passée
-=======
-#!/bin/bash
-
-get_thumbnail(){
-    # Vérifie que l'URL est passée
->>>>>>> b57e477d17030eb72b3da67e2ae5482a3ca3e64b
 if [ -z "$1" ]; then
   echo "Usage : $0 <URL YouTube>"
   exit 1
@@ -35,6 +30,3 @@ else
   echo "Erreur lors du téléchargement."
   exit 1
 fi
-}
-
-get_thumbnail "$1"
