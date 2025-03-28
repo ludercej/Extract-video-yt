@@ -9,7 +9,7 @@ on:
 
 jobs:
     get_thumnail:
-        runs-on: macos-latest
+        runs-on: ubuntu-latest
         steps:
         - name: checkout repo
           uses: actions/checkout@v4

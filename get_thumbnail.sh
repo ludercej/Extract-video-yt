@@ -1,7 +1,6 @@
 #!/bin/bash
 
-get_thumbnail(){
-    # Vérifie que l'URL est passée
+# Vérifie que l'URL est passée
 if [ -z "$1" ]; then
   echo "Usage : $0 <URL YouTube>"
   exit 1
@@ -18,6 +17,13 @@ if [ -z "$VIDEO_ID" ]; then
   exit 1
 fi
 
+# Vérifier si l'ID de la vidéo est bien extrait
+if [ -z "$VIDEO_ID" ]; then
+  echo "Erreur : Impossible d'extraire l'ID de la vidéo."
+  exit 1
+fi
+
+# Create folder
 mkdir -p thumbnails
 
 # Télécharge la miniature
@@ -30,6 +36,3 @@ else
   echo "Erreur lors du téléchargement."
   exit 1
 fi
-}
-
-get_thumbnail "$1"
