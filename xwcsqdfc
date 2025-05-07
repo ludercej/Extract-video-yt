@@ -1,0 +1,304 @@
+[33mcommit d9e49b37de7fc4a5da25949c6dd16e4826a0e575[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Wed May 7 15:48:56 2025 +0200
+
+    new script
+
+[33mcommit 65f30685941466b5f5adb5ba592d7ac2bce8ff1b[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Fri Mar 28 10:04:40 2025 +0100
+
+    modif .yaml v49
+
+[33mcommit 51351bb1ba5525497889af75a62698d107c383bb[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Fri Mar 28 09:55:29 2025 +0100
+
+    modif .yaml v48
+
+[33mcommit f886796be1626e8a53b37492a5385bfceadd4082[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Fri Mar 28 09:53:36 2025 +0100
+
+    modif .yaml v47
+
+[33mcommit fd2db11f4eb1dec0c9df53c5fb02f30c1192d7e5[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Fri Mar 28 09:50:51 2025 +0100
+
+    modif .yaml v46
+
+[33mcommit 103c973e4e13b89667bcaecd5f80373567aa414c[m
+Merge: e45edc3 ab590fa
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Fri Mar 28 09:45:59 2025 +0100
+
+    Merge branch 'main' of https://github.com/ludercej/Extract-video-yt
+
+[33mcommit e45edc39c5e32ce4e5aa93f8cb556fe562f81326[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Fri Mar 28 09:45:39 2025 +0100
+
+    modif .yaml v45
+
+[33mcommit ab590fa50f5a750e7f1f56a0bb026cd3944e54ea[m
+Author: luderce <67577580+ludercej@users.noreply.github.com>
+Date:   Fri Mar 28 09:44:29 2025 +0100
+
+    Update get_thumbnail.sh
+
+[33mcommit f0d9f3e89346b079937a86156f3a4b73c909c224[m
+Author: luderce <67577580+ludercej@users.noreply.github.com>
+Date:   Fri Mar 28 09:43:40 2025 +0100
+
+    Update get_thumbnail.sh
+
+[33mcommit 93930020d808fd6d972b57567faee3181576a030[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Fri Mar 28 09:42:36 2025 +0100
+
+    modif .yaml v45
+
+[33mcommit 600e7cebdf254af67e1e679f0201777100cfdb39[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Fri Mar 28 09:37:18 2025 +0100
+
+    modif .yaml v45
+
+[33mcommit 3abc25fcd569f7e3276f389879fc1797e5176a11[m
+Merge: 3a334a1 b57e477
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Fri Mar 28 09:36:17 2025 +0100
+
+    modif .yaml v44
+
+[33mcommit 3a334a16901c4cded0ad3a14a93790f5fa24bf75[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Fri Mar 28 09:35:47 2025 +0100
+
+    modif .yaml v44
+
+[33mcommit b57e477d17030eb72b3da67e2ae5482a3ca3e64b[m
+Author: luderce <67577580+ludercej@users.noreply.github.com>
+Date:   Fri Mar 28 09:33:12 2025 +0100
+
+    Update get_thumbnail.sh
+
+[33mcommit d8e5326481a69aa1d5578c2cb71284c7a09376a6[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Fri Mar 28 09:29:43 2025 +0100
+
+    modif .yaml v43
+
+[33mcommit 02e3c0608326ca8eddd61ad81e1a8d9b87c86657[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Fri Mar 28 09:28:13 2025 +0100
+
+    modif .yaml v43
+
+[33mcommit aa965ec21d618d416b846a2e6593410d8da0d61d[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Fri Mar 28 09:25:44 2025 +0100
+
+    modif .yaml v43
+
+[33mcommit 40e8d2b46ed3dd58917870a992bccdb1b1a6f995[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Fri Mar 28 09:24:07 2025 +0100
+
+    modif .yaml v42
+
+[33mcommit 3a175c91d895cbd2f4bb66569a8ad64e5d09022b[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Fri Mar 28 09:22:29 2025 +0100
+
+    modif .yaml v41
+
+[33mcommit bf35116dcc3c5f78f3756c177917bd53a48581d1[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Fri Mar 28 09:21:02 2025 +0100
+
+    modif .yaml v40
+
+[33mcommit 0046eee2b5d2ca9f6c4053747a9c7fc0a0a8cd3d[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Fri Mar 28 09:19:03 2025 +0100
+
+    modif .yaml v39
+
+[33mcommit 3a09ee82e44ce19264f72092cac6a8837d87dfd0[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Fri Mar 28 09:17:33 2025 +0100
+
+    modif .yaml v38
+
+[33mcommit 14d916b2a1a7210a9786fd9294c2a23ca8563cc0[m
+Merge: a17b456 370ec4b
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Fri Mar 28 09:14:37 2025 +0100
+
+    Merge branch 'main' of https://github.com/ludercej/Extract-video-yt
+
+[33mcommit a17b456d0c1e3d1714abca36d296a89171153251[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Fri Mar 28 09:14:30 2025 +0100
+
+    modif .yaml v37
+
+[33mcommit 370ec4bb2e92cfce45c701255dab887bd8cddf34[m
+Author: luderce <67577580+ludercej@users.noreply.github.com>
+Date:   Fri Mar 28 09:13:14 2025 +0100
+
+    Update get_thumbnail.sh
+
+[33mcommit f0cb45b5b90757fd1e487dcf5b70f2d336b66b58[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Fri Mar 28 09:11:45 2025 +0100
+
+    modif .yaml v37
+
+[33mcommit 5211f5630aa60abb0e674dd4cda187b99e5bba82[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Fri Mar 28 09:10:20 2025 +0100
+
+    modif .yaml v37
+
+[33mcommit 989082599d6f2199496f90c384871cd25da31c14[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Fri Mar 28 09:09:16 2025 +0100
+
+    modif .yaml v37
+
+[33mcommit f829a05a24f5059d65f59dd4c9b1b2ab0cfd6afc[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Fri Mar 28 09:07:23 2025 +0100
+
+    modif .yaml v36
+
+[33mcommit 24974b22e667bc04b94a9ffeb4ad5af90328530e[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Fri Mar 28 09:06:20 2025 +0100
+
+    modif .yaml v35
+
+[33mcommit 59d1b6d62ce3bfc1b2fec34e9cae11f4e668ef1c[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Fri Mar 28 08:58:13 2025 +0100
+
+    modif .yaml v34
+
+[33mcommit e568506f07b7d0fe43dd18648f5258aedf72b92f[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Thu Mar 27 22:50:10 2025 +0100
+
+    modif .yaml v33
+
+[33mcommit 50dce4ff541814308bada56d15fe2001b31429eb[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Thu Mar 27 22:48:25 2025 +0100
+
+    modif .yaml v32
+
+[33mcommit 04fb995e5de891a43ac646d3efebdee6e645c10a[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Thu Mar 27 22:46:31 2025 +0100
+
+    modif .yaml v31
+
+[33mcommit 18ee841c22f6e1aa9aa60959400440ee546dee9f[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Thu Mar 27 22:44:55 2025 +0100
+
+    modif .yaml v30
+
+[33mcommit fb5fd84e91d04114e2a48c2ff16e8b1b2d34179b[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Thu Mar 27 22:44:04 2025 +0100
+
+    modif .yaml v30
+
+[33mcommit c13c09ee9ce3b3dda32c57c39213e0b0f7299958[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Thu Mar 27 22:42:49 2025 +0100
+
+    modif .yaml v30
+
+[33mcommit 73334fef5f75bcb2b6b313b533d097c51ee5f08f[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Thu Mar 27 22:39:30 2025 +0100
+
+    modif .yaml v29
+
+[33mcommit a29330d6382710c9ae1cb2d5ad26a275e03b5938[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Thu Mar 27 22:36:23 2025 +0100
+
+    modif .yaml v28
+
+[33mcommit 217c3878db66c109fb3b95cbce76629911600c7a[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Thu Mar 27 22:35:39 2025 +0100
+
+    modif .yaml v27
+
+[33mcommit cfa9ab8e28f006c88ee0a8fe10c17c8a07dbb196[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Thu Mar 27 22:33:11 2025 +0100
+
+    modif .yaml v26
+
+[33mcommit b6d0c07d1964ccc2ffa63c5539c06f030530d8ae[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Thu Mar 27 22:29:14 2025 +0100
+
+    modif .yaml v25
+
+[33mcommit a02c493e3198853f365daade9de5d73aee48fa9b[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Thu Mar 27 19:42:20 2025 +0100
+
+    modif .yaml v24
+
+[33mcommit 32d03d7714f67c0b145e61ad5a2dbe1259fd8d72[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Thu Mar 27 19:41:03 2025 +0100
+
+    modif .yaml v24
+
+[33mcommit 0f1c411fc995ede129d96bc57c42b61a04288306[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Thu Mar 27 19:40:09 2025 +0100
+
+    modif .yaml v24
+
+[33mcommit a68e61c34c0f9538910b86e396175762a9b3ab7e[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Thu Mar 27 19:37:54 2025 +0100
+
+    add folders
+
+[33mcommit 01bc8b0d3b5e8ac8e55bc2dad7709e07023737eb[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Thu Mar 27 19:37:07 2025 +0100
+
+    add folders
+
+[33mcommit d62b8c175e49ee79c5ef0ea8b85ec98093a9ae40[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Thu Mar 27 19:35:18 2025 +0100
+
+    modif .yaml v23
+
+[33mcommit ed32a6d39c9416758819e6ab995d89c891983086[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Thu Mar 27 19:26:30 2025 +0100
+
+    modif .yaml v22
+
+[33mcommit 189531038a3d4b826e31fd24cda9f37fce504200[m
+Author: ludercej <p4nda.soft@gmail.com>
+Date:   Thu Mar 27 19:23:20 2025 +0100
+
+    modif .yaml v21
+
+[33mcom
