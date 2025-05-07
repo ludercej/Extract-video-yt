@@ -1,7 +1,7 @@
 # Extract-video-yt
 
 
-✅ Étape – Écriture du script Bash
+✅ Étape – Écriture du script Bash v2
 
 Objectif : Créer un script Bash get_thumbnail.sh capable de télécharger la miniature (thumbnail) d'une vidéo YouTube à partir de son URL.
 
